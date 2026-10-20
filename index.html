@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ESSCEE — Movement, Mindfully Made</title>
+  <meta name="description" content="Discover ESSCEE. Thoughtful activewear designed for movement and everyday living. Join our launch waitlist.">
+
+  <style>
+    :root {
+      --cream: #f5f2eb;
+      --ink: #292d25;
+      --muted: #74766d;
+      --line: #dedbd2;
+      --accent: #777b65;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .announcement {
+      padding: 11px 16px;
+      text-align: center;
+      background: var(--ink);
+      color: var(--cream);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    header {
+      min-height: 88px;
+      padding: 0 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 700;
+      letter-spacing: 5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      transition: opacity 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.55;
+    }
+
+    .hero {
+      min-height: 690px;
+      padding: 105px 24px 95px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 30px;
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 930px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(45px, 6.4vw, 82px);
+      font-weight: 400;
+      line-height: 1.08;
+      letter-spacing: -2.5px;
+    }
+
+    .description {
+      max-width: 430px;
+      margin: 27px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .waitlist {
+      width: min(100%, 460px);
+      margin-top: 40px;
+      scroll-margin-top: 30px;
+    }
+
+    .waitlist-label {
+      margin: 0 0 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .waitlist iframe {
+      display: block;
+      width: 100%;
+      min-height: 190px;
+      border: 0;
+      background: transparent;
+    }
+
+    .waitlist-note {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .divider {
+      width: 42px;
+      height: 1px;
+      margin: 30px auto 0;
+      background: var(--accent);
+    }
+
+    .philosophy {
+      padding: 65px 24px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .philosophy p {
+      max-width: 510px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+
+    .section-label {
+      margin: 0;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    footer {
+      padding: 28px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    .footer-logo {
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+
+    @media (max-width: 600px) {
+      .announcement {
+        font-size: 9px;
+        letter-spacing: 1.3px;
+      }
+
+      header {
+        min-height: 72px;
+        padding: 0 6%;
+      }
+
+      .logo {
+        font-size: 22px;
+        letter-spacing: 4px;
+      }
+
+      nav {
+        gap: 13px;
+        font-size: 9px;
+        letter-spacing: 0.8px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 95px 22px 75px;
+      }
+
+      .eyebrow {
+        margin-bottom: 24px;
+        font-size: 9px;
+        letter-spacing: 3px;
+      }
+
+      h1 {
+        font-size: clamp(43px, 11vw, 62px);
+        letter-spacing: -1.8px;
+        line-height: 1.1;
+      }
+
+      .description {
+        margin-top: 22px;
+        font-size: 14px;
+      }
+
+      .waitlist {
+        margin-top: 32px;
+      }
+
+      .philosophy {
+        padding: 52px 24px;
+      }
+
+      .philosophy p {
+        font-size: 18px;
+      }
+
+      footer {
+        padding: 24px 6%;
+        flex-wrap: wrap;
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement">
+    A new perspective on everyday movement
+  </div>
+
+  <header>
+    <a class="logo" href="#" aria-label="ESSCEE home">ESSCEE</a>
+
+    <nav>
+      <a href="#philosophy">Our philosophy</a>
+      <a href="#waitlist">Join us ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+
+      <p class="eyebrow">Movement, mindfully made</p>
+
+      <h1>
+        A better kind of<br>
+        everyday activewear.
+      </h1>
+
+      <p class="description">
+        Thoughtful materials. Considered design.
+        Made to move with you. Join us at the beginning.
+      </p>
+
+      <div class="waitlist" id="waitlist">
+        <p class="waitlist-label">Be part of what's next</p>
+
+        <iframe
+          data-tally-src="https://tally.so/embed/xVXMqo?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="190"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="ESSCEE Waitlist">
+        </iframe>
+
+        <p class="waitlist-note">
+          Sign up for first access and launch updates.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+    </section>
+
+    <section class="philosophy" id="philosophy">
+      <p class="section-label">The ESSCEE philosophy</p>
+
+      <p>
+        Move with intention. Choose with care.
+        Find your own rhythm.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-logo" href="#">ESSCEE</a>
+    <span>Made with intention.</span>
+    <span>© ESSCEE 2026</span>
+  </footer>
+
+  <script>
+    (function () {
+      var d = document;
+      var w = "https://tally.so/widgets/embed.js";
+
+      function loadTally() {
+        if (typeof Tally !== "undefined") {
+          Tally.loadEmbeds();
+        } else {
+          d.querySelectorAll(
+            'iframe[data-tally-src]:not([src])'
+          ).forEach(function (frame) {
+            frame.src = frame.dataset.tallySrc;
+          });
+        }
+      }
+
+      if (typeof Tally !== "undefined") {
+        loadTally();
+      } else if (!d.querySelector('script[src="' + w + '"]')) {
+        var s = d.createElement("script");
+        s.src = w;
+        s.onload = loadTally;
+        s.onerror = loadTally;
+        d.body.appendChild(s);
+      }
+    })();
+  </script>
+
+</body>
+</html>
